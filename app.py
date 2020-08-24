@@ -2,11 +2,9 @@
 from flask import Flask
 # we import the Twilio client from the dependency we just installed
 from flask import request
-from flask_cors import CORS
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 app = Flask(__name__)
-CORS(app)
 @app.route('/',methods=['GET'])
 def hello_world():
 
